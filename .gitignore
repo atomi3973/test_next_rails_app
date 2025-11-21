@@ -1,0 +1,74 @@
+# =========================
+# backend (Rails API)
+# =========================
+
+# Bundler config
+backend/.bundle
+
+# Environment files
+backend/.env*
+!backend/.env*.erb
+
+# Log and temp files
+backend/log/*
+backend/tmp/*
+!backend/log/.keep
+!backend/tmp/.keep
+
+# PIDs
+backend/tmp/pids/*
+!backend/tmp/pids/
+!backend/tmp/pids/.keep
+
+# Storage (uploads, SQLite databases)
+backend/storage/*
+!backend/storage/.keep
+backend/tmp/storage/*
+!backend/tmp/storage/
+!backend/tmp/storage/.keep
+
+# Master key for credentials
+backend/config/master.key
+
+# =========================
+# frontend (Next.js)
+# =========================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+
+# Testing coverage
+frontend/coverage/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Misc
+frontend/.DS_Store
+frontend/*.pem
+
+# Debug logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# Environment files
+frontend/.env*
+
+# Vercel
+frontend/.vercel/
+
+# TypeScript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+

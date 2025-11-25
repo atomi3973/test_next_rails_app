@@ -14,3 +14,12 @@ export const ItemsSchema = z.array(ItemSchema);
 // TypeScript 型自動生成
 export type Item = z.infer<typeof ItemSchema>;
 export type Items = z.infer<typeof ItemSchema>;
+
+//postの型
+export const ItemCreateSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+});
+
+export type ItemCreate = z.infer<typeof ItemCreateSchema>;
+

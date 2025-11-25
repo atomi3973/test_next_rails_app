@@ -1,5 +1,5 @@
 import { getItems } from "@/actions/getItems";
-
+import AddItemButton from "@/components/item/AddItemButton";
 
 export default async function HomePage() {
   const items = await getItems();
@@ -39,6 +39,7 @@ export default async function HomePage() {
           
         ))}
       </ul>
+      <AddItemButton></AddItemButton>
     </div>
     </main>
   )

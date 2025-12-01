@@ -16,7 +16,7 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./backend:/app
-      - /app/tmp 
+      - /app/tmp
     ports:
       - "3001:3000"
     env_file:
@@ -44,7 +44,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - backend/.env
+      - frontend/.env.local 
     depends_on:
       - backend
     command: npm run dev
